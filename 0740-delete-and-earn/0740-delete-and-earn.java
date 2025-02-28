@@ -1,24 +1,24 @@
 class Solution {
     public int deleteAndEarn(int[] nums) {
-        int[] count = new int[10001];
+
+        int[] score = new int[10001];
         int min = 10001;
         int max = 0;
         for (int n : nums) {
-            count[n]++;
+            score[n] += n;
             min = Math.min(min, n);
             max = Math.max(max, n);
         }
 
-        int[] dp = new int[max + 1];
-        for (int i = min; i <= max; i++) {
-            if(i==1) {
-                dp[i] = i*count[i];
-                continue;
-            }
+        int back2 = 0;
+        int back1 = 0;
 
-            dp[i] = Math.max(dp[i-1], dp[i-2]+count[i]*i);
+        for (int i = min; i <= max; i++) {
+            int curr = Math.max(back2 + score[i], back1);
+            back2 = back1;
+            back1 = curr;
         }
 
-        return dp[max];
+        return back1;
     }
 }
