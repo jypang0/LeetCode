@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0740-delete-and-earn](https://github.com/jypang0/LeetCode/tree/master/0740-delete-and-earn) |
 | [0747-min-cost-climbing-stairs](https://github.com/jypang0/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [1236-n-th-tribonacci-number](https://github.com/jypang0/LeetCode/tree/master/1236-n-th-tribonacci-number) |
+| [1250-longest-common-subsequence](https://github.com/jypang0/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1896-maximum-score-from-performing-multiplication-operations](https://github.com/jypang0/LeetCode/tree/master/1896-maximum-score-from-performing-multiplication-operations) |
 ## Memoization
 |  |
@@ -33,4 +34,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0740-delete-and-earn](https://github.com/jypang0/LeetCode/tree/master/0740-delete-and-earn) |
+## String
+|  |
+| ------- |
+| [1250-longest-common-subsequence](https://github.com/jypang0/LeetCode/tree/master/1250-longest-common-subsequence) |
 <!---LeetCode Topics End-->
