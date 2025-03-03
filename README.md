@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/jypang0/LeetCode/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/jypang0/LeetCode/tree/master/0198-house-robber) |
+| [0221-maximal-square](https://github.com/jypang0/LeetCode/tree/master/0221-maximal-square) |
 | [0740-delete-and-earn](https://github.com/jypang0/LeetCode/tree/master/0740-delete-and-earn) |
 | [0747-min-cost-climbing-stairs](https://github.com/jypang0/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [1236-n-th-tribonacci-number](https://github.com/jypang0/LeetCode/tree/master/1236-n-th-tribonacci-number) |
@@ -27,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0198-house-robber](https://github.com/jypang0/LeetCode/tree/master/0198-house-robber) |
+| [0221-maximal-square](https://github.com/jypang0/LeetCode/tree/master/0221-maximal-square) |
 | [0740-delete-and-earn](https://github.com/jypang0/LeetCode/tree/master/0740-delete-and-earn) |
 | [0747-min-cost-climbing-stairs](https://github.com/jypang0/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [1896-maximum-score-from-performing-multiplication-operations](https://github.com/jypang0/LeetCode/tree/master/1896-maximum-score-from-performing-multiplication-operations) |
@@ -38,4 +40,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1250-longest-common-subsequence](https://github.com/jypang0/LeetCode/tree/master/1250-longest-common-subsequence) |
+## Matrix
+|  |
+| ------- |
+| [0221-maximal-square](https://github.com/jypang0/LeetCode/tree/master/0221-maximal-square) |
 <!---LeetCode Topics End-->
