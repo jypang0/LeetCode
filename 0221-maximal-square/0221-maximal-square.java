@@ -5,6 +5,7 @@ class Solution {
 
         int answer = 0;
 
+        // initialize dp array
         int[][] dp = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -27,10 +28,10 @@ class Solution {
 
                 dp[i][j] = Math.min(right, Math.min(bottom, diag)) + 1;
 
-                answer = Math.max(dp[i][j] * dp[i][j], answer);
+                answer = Math.max(dp[i][j], answer);
             }
         }
 
-        return answer;
+        return answer*answer;
     }
 }
