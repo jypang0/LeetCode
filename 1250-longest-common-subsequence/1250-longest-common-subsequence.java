@@ -1,11 +1,11 @@
 class Solution {
     
     private int[][] memo;
-    private String text1,text2;
+    private char[] str1, str2;
 
     private int dp(int i, int j) {
         // base
-        if (i == text1.length() || j == text2.length()) {
+        if (i == str1.length || j == str2.length) {
             return 0;
         }
 
@@ -13,7 +13,7 @@ class Solution {
             return memo[i][j];
         }
 
-        if (text1.charAt(i) == text2.charAt(j)) {
+        if (str1[i] == str2[j]) {
             memo[i][j] = 1 + dp(i + 1, j + 1);
         } else {
             memo[i][j] = Math.max(dp(i, j + 1), dp(i + 1, j));
@@ -23,9 +23,9 @@ class Solution {
     }
 
     public int longestCommonSubsequence(String text1, String text2) {
-        this.text1 = text1;
-        this.text2 = text2;
-        this.memo = new int[text1.length()][text2.length()];
+        this.str1 = text1.toCharArray();
+        this.str2 = text2.toCharArray();
+        this.memo = new int[str1.length][str2.length];
         for(int[] m:memo) {
             Arrays.fill(m,-1);
         } 
