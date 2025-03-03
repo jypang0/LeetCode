@@ -18,13 +18,13 @@ class Solution {
 
         for (int i = m - 2; i >= 0; i--) {
             for (int j = n - 2; j >= 0; j--) {
+                if (dp[i][j]==0) {
+                    continue;
+                }
+
                 int right = dp[i][j + 1];
                 int bottom = dp[i + 1][j];
                 int diag = dp[i + 1][j + 1];
-
-                if (dp[i][j]==0 || right == 0 || bottom == 0 || diag == 0) {
-                    continue;
-                }
 
                 dp[i][j] = Math.min(right, Math.min(bottom, diag)) + 1;
 
