@@ -1,27 +1,26 @@
 class Solution {
     public List<Integer> getRow(int rowIndex) {
-        List<Integer> before = new ArrayList<>(List.of(1));
-        List<Integer> current = new ArrayList<>(List.of(1,1));
-
-        if(rowIndex==0) {
-            return before;
-        } else if(rowIndex==1){
-            return current;
-        }
-
-        int idx = 2;
-        while(idx<=rowIndex) {
-            before = current;
-            current = new ArrayList<>(List.of(1));
-
-            for(int i=1;i<idx;i++) {
-                current.add(before.get(i-1)+before.get(i));
+        int[] row = new int[rowIndex+1];
+        for (int i = 0; i <= rowIndex; i++) {
+            int first = 1;
+            int second = 1;
+            for (int j = 0; j <= i/2; j++) {
+                if (j == 0) {
+                    row[j] = 1;
+                    row[i-j] = 1;
+                } else {
+                    first = second;
+                    second = row[j];
+                    row[j] = first + second;
+                    row[i-j] = first + second;
+                }
             }
-
-            current.add(1);
-            idx++;
         }
 
-        return current;
+        List<Integer> ans = new ArrayList<>();
+        for (int i = 0; i <= rowIndex; i++) {
+            ans.add(row[i]);
+        }
+        return ans;
     }
 }
