@@ -6,8 +6,9 @@ class Solution {
         int n2 = 0;
         int n1 = 1;
 
+        int n0 = 0;
         for(int nI=2;nI<=n;nI++) {
-            int n0 = n1+n2;
+            n0 = n1+n2;
             n2 = n1;
             n1 = n0; 
         }
