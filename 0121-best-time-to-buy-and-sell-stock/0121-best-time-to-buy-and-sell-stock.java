@@ -1,9 +1,8 @@
 class Solution {
     public int maxProfit(int[] prices) {
 
-        // max profit till now(idx)
-        int[] curMaxProfit = new int[prices.length];
-        curMaxProfit[0] = 0;
+        // max profit till now
+        int curMaxProfit = 0;
 
         // Minimum price untill now
         // Should buy at the minimum price
@@ -14,9 +13,9 @@ class Solution {
             curMinPrice = Math.min(curMinPrice, prices[i]);
 
             // prices[i] - curMinPrice : sell now, buy at the minimum price untill now
-            curMaxProfit[i] = Math.max(curMaxProfit[i-1], prices[i]-curMinPrice);
+            curMaxProfit = Math.max(curMaxProfit, prices[i]-curMinPrice);
         }
         
-        return curMaxProfit[curMaxProfit.length-1];
+        return curMaxProfit;
     }
 }
