@@ -1,34 +1,42 @@
-import java.util.Arrays;
-
 class Solution {
+
     private int[] memo;
     private int[] coins;
+    private int answer;
 
     public int coinChange(int[] coins, int amount) {
-        if (amount == 0) return 0;
+        if (amount == 0)
+            return 0;
 
+        Arrays.sort(coins);
         this.coins = coins;
-        memo = new int[amount + 1];
-        Arrays.fill(memo, -1); // -1 means "not computed yet"
 
-        int result = dp(amount);
-        return result == Integer.MAX_VALUE ? -1 : result;
+        memo = new int[amount + 1];
+        answer = -1;
+
+
+        dp(amount, 1);
+
+
+        return answer;
     }
 
-    private int dp(int amount) {
-        if (amount == 0) return 0;  // Base case: No coins needed for amount 0
-        if (amount < 0) return Integer.MAX_VALUE; // Impossible case
-        
-        if (memo[amount] != -1) return memo[amount]; // Return cached result
+    private void dp(int amount, int depth) {
+        for(int i=coins.length-1;i>=0;i--) {
+            int curr = amount-coins[i];
+            if(curr<0) {
+                continue;
+            } else {
+                if(memo[curr]!=0 && memo[curr]<=depth)
+                    continue;
 
-        int minCoins = Integer.MAX_VALUE;
-        for (int coin : coins) {
-            int res = dp(amount - coin);
-            if (res != Integer.MAX_VALUE) { // Only consider valid paths
-                minCoins = Math.min(minCoins, res + 1);
+                memo[curr] = depth;
+
+                if(curr==0)
+                    answer=answer==-1?depth:Math.min(answer,depth);
+                else
+                    dp(curr,depth+1);
             }
         }
-
-        return memo[amount] = minCoins;
     }
 }
