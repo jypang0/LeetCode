@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0118-pascals-triangle](https://github.com/jypang0/LeetCode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/jypang0/LeetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jypang0/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0139-word-break](https://github.com/jypang0/LeetCode/tree/master/0139-word-break) |
 | [0198-house-robber](https://github.com/jypang0/LeetCode/tree/master/0198-house-robber) |
 | [0221-maximal-square](https://github.com/jypang0/LeetCode/tree/master/0221-maximal-square) |
 | [0322-coin-change](https://github.com/jypang0/LeetCode/tree/master/0322-coin-change) |
@@ -32,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/jypang0/LeetCode/tree/master/0070-climbing-stairs) |
+| [0139-word-break](https://github.com/jypang0/LeetCode/tree/master/0139-word-break) |
 | [1013-fibonacci-number](https://github.com/jypang0/LeetCode/tree/master/1013-fibonacci-number) |
 | [1236-n-th-tribonacci-number](https://github.com/jypang0/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 ## Array
@@ -40,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0118-pascals-triangle](https://github.com/jypang0/LeetCode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/jypang0/LeetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jypang0/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0139-word-break](https://github.com/jypang0/LeetCode/tree/master/0139-word-break) |
 | [0198-house-robber](https://github.com/jypang0/LeetCode/tree/master/0198-house-robber) |
 | [0221-maximal-square](https://github.com/jypang0/LeetCode/tree/master/0221-maximal-square) |
 | [0322-coin-change](https://github.com/jypang0/LeetCode/tree/master/0322-coin-change) |
@@ -50,10 +53,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0139-word-break](https://github.com/jypang0/LeetCode/tree/master/0139-word-break) |
 | [0740-delete-and-earn](https://github.com/jypang0/LeetCode/tree/master/0740-delete-and-earn) |
 ## String
 |  |
 | ------- |
+| [0139-word-break](https://github.com/jypang0/LeetCode/tree/master/0139-word-break) |
 | [0392-is-subsequence](https://github.com/jypang0/LeetCode/tree/master/0392-is-subsequence) |
 | [1250-longest-common-subsequence](https://github.com/jypang0/LeetCode/tree/master/1250-longest-common-subsequence) |
 ## Matrix
@@ -76,4 +81,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/jypang0/LeetCode/tree/master/0322-coin-change) |
+## Trie
+|  |
+| ------- |
+| [0139-word-break](https://github.com/jypang0/LeetCode/tree/master/0139-word-break) |
 <!---LeetCode Topics End-->
